@@ -52,57 +52,64 @@ To see how you can add code snippets, see below:
 
 ```html
 <div class="primaryimagecontainer" >
-      <img src="images/image-equilibrium.jpg" alt="colorful cube on its corner" title="colorful cube on its corner" />
-      <div>
-        <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-          <g fill="none" fill-rule="evenodd"><path d="M0 0h48v48H0z"/>
-            <path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z" fill="#FFF" fill-rule="nonzero"/>
-          </g>
-        </svg>
-      </div>
+    <img src="images/image-equilibrium.jpg" alt="colorful cube on its corner" title="colorful cube on its corner" />
+    <div>
+      <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd"><path d="M0 0h48v48H0z"/>
+          <path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10           10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z" fill="#FFF" fill-rule="nonzero"/>
+        </g>
+      </svg>
+    </div>
+</div>
   ```
+  ```css
+  .primaryimagecontainer {
+    position: relative;
+    max-width: 100%;
+    align-self: center;
+}
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
+.primaryimagecontainer img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.primaryimagecontainer div {
+    border-radius: 10px;
+    min-width: 100%;
+    /* padding: 42%; */
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 255, 247,.5);
+    display: none;
+}
+
+.primaryimagecontainer img:hover~div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I am especially interested in exploring ways to allow for a smoother transition between breakpoints. Currently, I have a few flickers on the screen. Additionally, I want the card remain the same size (for the most part) no matter the screen size. I would love to receive feedback on approaches for that.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [A Complet Gide to Flexbox - CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This visual flexbox cheatsheet is a regular reference for me.
+- Let us not forget about the [Google](https://google.com)
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@kjm2023](https://www.frontendmentor.io/profile/kjm2023)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Shout out to my amazing coding cohort at [GDI (Girl Develop It!)](http://girldevelopit.org).
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+
