@@ -11,7 +11,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
@@ -94,13 +93,9 @@ To see how you can add code snippets, see below:
 }
 ```
 
-### Continued development
-
-I am especially interested in exploring ways to allow for a smoother transition between breakpoints. Currently, I have a few flickers on the screen. Additionally, I want the card remain the same size (for the most part) no matter the screen size. I would love to receive feedback on approaches for that.
-
 ### Useful resources
 
-- [A Complet Gide to Flexbox - CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This visual flexbox cheatsheet is a regular reference for me.
+- [A Complete Gide to Flexbox - CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This visual flexbox cheatsheet is a regular reference for me.
 - Let us not forget about the [Google](https://google.com)
 
 ## Author
